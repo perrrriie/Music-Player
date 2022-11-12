@@ -79,8 +79,8 @@
 	}
 	
 	.header_images:hover{
-	transition: transform 1.25s;
-	transform: scale(1.22);                  /* HEADER IMAGES ON HOVER SHOW SCALING AND TRANSFORMATION TAKES 1.25S*/
+	transition: transform 1.20s;
+	transform: scale(1.15);                  /* HEADER IMAGES ON HOVER SHOW SCALING AND TRANSFORMATION TAKES 1.25S*/
 	}
 	
 	.news{
@@ -127,6 +127,22 @@
 	.artists:hover{
 	opacity:100%;                                 	/* POPULAR ARTISTS IMAGE LINK ON HOVER SHOW OPACITY CHANGE*/
 	}
+
+	fieldset{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding:10px;
+		margin:2px;
+	}
+	
+	.t2{
+		display:flex;
+		flex-direction: column;
+		padding:2px;
+		align-items: center;
+		margin:0 15px; 
+	}
 	
 	/* to add css to my playlist div*/
 	
@@ -165,7 +181,7 @@
 	position:fixed;
 	bottom:0;
 	MARGIN:0;
-	background-color:#B0B5FF;
+	background-color:#aab9bf;
 	width:100%;
 	}
 	
@@ -177,11 +193,11 @@
 	}
 
 	audio::-webkit-media-controls-panel{
-	background:#B0B5FF;
+	background:#aab9bf;
 	}
 	
 	i{
-	color:#e374e5 ;
+	color:#57a2b7 ;
 	}
 	</style>
 </head>
@@ -283,18 +299,15 @@
 				<a href="single-playlist.html" class="popular"><img src="eminem.png" alt="an image" class="artists"><p style="text-align:center;width:110px;height:10px;color:white;">EMINEM</p>
 				</a>
 			</div>
-			<div id="names">
-				<a href="single-playlist.html" class="popular"><img src="billie.png" alt="an image" class="artists"><p style="text-align:center;width:110px;height:10px;color:white;">BILLIE</p>
-				</a>
-			</div>
+			
 		</fieldset><br>
 		
 		<!--fieldset for TOP3 artists-->
 		<fieldset id="charts">
 		<legend>TOP 3</legend>
-			<span><i>#1 <big>BTS  </big></i><span><a href="single-playlist.html" class="popular"><img src="bts.png" alt="an image" class="artists"></a>&emsp; &emsp;
-			<i>#2 <big>EMINEM  </big></i><a href="single-playlist.html" class="popular"><img src="eminem.png" alt="an image" class="artists"></a>&emsp; &emsp;
-			<i>#3 <big>TAYLOR  </big></i><a href="single-playlist.html" class="popular"><img src="swift.png" alt="an image" class="artists"></a>
+			<div class="t2" ><i>#1 <big>BTS  </big></i><a href="single-playlist.html" class="popular"><img src="bts.png" alt="an image" class="artists"></a></div>
+			<div class="t2" ><i>#2 <big>EMINEM  </big></i><a href="single-playlist.html" class="popular"><img src="eminem.png" alt="an image" class="artists"></a>&emsp; &emsp;</div>
+			<div class="t2" ><i>#3 <big>TAYLOR  </big></i><a href="single-playlist.html" class="popular"><img src="swift.png" alt="an image" class="artists"></a></div>
 		</fieldset>
 		<br><br><br><br>
 	</main>
@@ -374,7 +387,18 @@
 </div>
 
 <!--to add div4 for audio bar-->
-
+<div id="div4">
+	<span style="color:#0C0D14;font-size:16px">
+		<B>&emsp; &emsp;Let You Down
+			<small> -NF</small>
+		</B>
+		&emsp; 
+		<span style="font-size:22px;color:#DA1111;float:right;"><b>♡</b>&emsp; &emsp;</span>
+	</span>
+	<audio controls>
+		<source src="letyoudown.mp3" type="audio/mp3"><
+	</audio>
+</div>
 
 </body>
 </html>
